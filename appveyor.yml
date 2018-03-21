@@ -1,0 +1,14 @@
+version: 1.0.{build}
+skip_tags: true
+branches:
+  only:
+    - master
+configuration: Debug
+environment:
+before_build:
+  - cd src/BasicWeb
+  - dotnet restore
+build_script:
+  - dotnet build -c Debug /p:DebugType=full
+test_script:
+after_test:
