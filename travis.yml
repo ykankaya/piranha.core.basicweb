@@ -1,0 +1,38 @@
+language: csharp
+
+os:
+  - osx
+  - linux
+
+osx_image: xcode9
+
+dist: trusty
+
+addons:
+  apt:
+    packages: 
+    - gettext
+    - libcurl4-openssl-dev
+    - libicu-dev
+    - libssl-dev
+    - libunwind8
+
+sudo: required
+
+mono: none
+
+dotnet: 2.0.0
+
+branches:
+  only:
+  - master
+
+script:
+  - ./build.sh --verbosity diagnostic
+
+cache:
+    directories:
+    - ".packages"
+    - "tools/Addins"
+    - "tools/gitreleasemanager"
+    - "tools/GitVersion.CommandLine"
