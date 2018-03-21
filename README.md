@@ -3,6 +3,7 @@
 | Build server | Platform     | Build status |
 |--------------|--------------|--------------|
 | AppVeyor     | Windows      | [![Build status](https://ci.appveyor.com/api/projects/status/dn4ltfl1rnlv9ksk?svg=true)](https://ci.appveyor.com/project/tidyui/piranha-core-basicweb) |
+| Travis       | Linux / OS X | [![Build status](https://travis-ci.org/PiranhaCMS/piranha.core.basicweb.svg?branch=master)](https://travis-ci.org/PiranhaCMS/piranha.core.basicweb) |
 | NuGet        |              | [![NuGet](https://img.shields.io/nuget/v/Piranha.BasicWeb.CSharp.svg)](https://www.nuget.org/packages/Piranha.BasicWeb.CSharp) |
 
 ## About
